@@ -1,0 +1,82 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2023-10-30T19:22:11.103969",
+            "hasPart": [
+                {
+                    "@id": "kmer-profiling-hifi-VGP1.ga"
+                },
+                {
+                    "@id": "README.md"
+                }
+            ],
+            "isBasedOn": "https://github.com/iwc-workflows/kmer-profiling-hifi-VGP1",
+            "license": "CC-BY-4.0",
+            "mainEntity": {
+                "@id": "kmer-profiling-hifi-VGP1.ga"
+            },
+            "name": "kmer-profiling-hifi-VGP1/main"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "kmer-profiling-hifi-VGP1.ga",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow"
+            ],
+            "creator": [
+                {
+                    "@id": "https://vertebrategenomeproject.org"
+                },
+                {
+                    "@id": "#39469129-bb03-4ded-ab5d-4276e16408de"
+                }
+            ],
+            "name": "kmer-profiling-hifi-VGP1/main",
+            "programmingLanguage": {
+                "@id": "#galaxy"
+            },
+            "url": "https://github.com/iwc-workflows/kmer-profiling-hifi-VGP1",
+            "version": "0.1.1"
+        },
+        {
+            "@id": "#galaxy",
+            "@type": "ComputerLanguage",
+            "identifier": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "name": "Galaxy",
+            "url": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "version": "v19_09"
+        },
+        {
+            "@id": "https://vertebrategenomeproject.org",
+            "@type": "Organization",
+            "name": "VGP"
+        },
+        {
+            "@id": "#39469129-bb03-4ded-ab5d-4276e16408de",
+            "@type": "Organization",
+            "name": "Galaxy"
+        },
+        {
+            "@id": "README.md",
+            "@type": "File"
+        }
+    ]
+}
