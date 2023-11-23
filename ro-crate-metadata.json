@@ -1,16 +1,36 @@
 {
-    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        {
+            "GithubService": "https://w3id.org/ro/terms/test#GithubService",
+            "JenkinsService": "https://w3id.org/ro/terms/test#JenkinsService",
+            "PlanemoEngine": "https://w3id.org/ro/terms/test#PlanemoEngine",
+            "TestDefinition": "https://w3id.org/ro/terms/test#TestDefinition",
+            "TestInstance": "https://w3id.org/ro/terms/test#TestInstance",
+            "TestService": "https://w3id.org/ro/terms/test#TestService",
+            "TestSuite": "https://w3id.org/ro/terms/test#TestSuite",
+            "TravisService": "https://w3id.org/ro/terms/test#TravisService",
+            "definition": "https://w3id.org/ro/terms/test#definition",
+            "engineVersion": "https://w3id.org/ro/terms/test#engineVersion",
+            "instance": "https://w3id.org/ro/terms/test#instance",
+            "resource": "https://w3id.org/ro/terms/test#resource",
+            "runsOn": "https://w3id.org/ro/terms/test#runsOn"
+        }
+    ],
     "@graph": [
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2023-11-16T14:32:18.217599",
+            "datePublished": "2023-11-23T13:33:07.963883",
             "hasPart": [
                 {
                     "@id": "kmer-profiling-hifi-VGP1.ga"
                 },
                 {
                     "@id": "README.md"
+                },
+                {
+                    "@id": "kmer-profiling-hifi-VGP1-tests.yml"
                 }
             ],
             "isBasedOn": "https://github.com/iwc-workflows/kmer-profiling-hifi-VGP1",
@@ -18,6 +38,11 @@
             "mainEntity": {
                 "@id": "kmer-profiling-hifi-VGP1.ga"
             },
+            "mentions": [
+                {
+                    "@id": "#test_main_1"
+                }
+            ],
             "name": "kmer-profiling-hifi-VGP1/main"
         },
         {
@@ -42,7 +67,7 @@
                     "@id": "https://vertebrategenomeproject.org"
                 },
                 {
-                    "@id": "#cbfa54c5-09f3-4dbe-b222-17ac12ff938a"
+                    "@id": "#80ac14af-4697-453b-95a6-4faadd8fd9be"
                 }
             ],
             "name": "kmer-profiling-hifi-VGP1/main",
@@ -50,7 +75,7 @@
                 "@id": "#galaxy"
             },
             "url": "https://github.com/iwc-workflows/kmer-profiling-hifi-VGP1",
-            "version": "0.1.4"
+            "version": "0.1.5"
         },
         {
             "@id": "#galaxy",
@@ -70,13 +95,66 @@
             "name": "VGP"
         },
         {
-            "@id": "#cbfa54c5-09f3-4dbe-b222-17ac12ff938a",
+            "@id": "#80ac14af-4697-453b-95a6-4faadd8fd9be",
             "@type": "Organization",
             "name": "Galaxy"
         },
         {
             "@id": "README.md",
             "@type": "File"
+        },
+        {
+            "@id": "#test_main_1",
+            "@type": "TestSuite",
+            "definition": {
+                "@id": "kmer-profiling-hifi-VGP1-tests.yml"
+            },
+            "instance": [
+                {
+                    "@id": "#test_main_1_1"
+                }
+            ],
+            "mainEntity": {
+                "@id": "kmer-profiling-hifi-VGP1.ga"
+            },
+            "name": "test_main_1"
+        },
+        {
+            "@id": "#test_main_1_1",
+            "@type": "TestInstance",
+            "name": "test_main_1_1",
+            "resource": "repos/iwc-workflows/kmer-profiling-hifi-VGP1/actions/workflows/wftest.yml",
+            "runsOn": {
+                "@id": "https://w3id.org/ro/terms/test#GithubService"
+            },
+            "url": "https://api.github.com"
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#GithubService",
+            "@type": "TestService",
+            "name": "Github Actions",
+            "url": {
+                "@id": "https://github.com"
+            }
+        },
+        {
+            "@id": "kmer-profiling-hifi-VGP1-tests.yml",
+            "@type": [
+                "File",
+                "TestDefinition"
+            ],
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/terms/test#PlanemoEngine"
+            },
+            "engineVersion": ">=0.75.18"
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#PlanemoEngine",
+            "@type": "SoftwareApplication",
+            "name": "Planemo",
+            "url": {
+                "@id": "https://github.com/galaxyproject/planemo"
+            }
         }
     ]
 }
