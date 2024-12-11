@@ -21,7 +21,7 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2024-08-07T19:57:16.654296",
+            "datePublished": "2024-12-11T14:30:58.708097",
             "hasPart": [
                 {
                     "@id": "kmer-profiling-hifi-VGP1.ga"
@@ -67,7 +67,7 @@
                     "@id": "https://vertebrategenomeproject.org"
                 },
                 {
-                    "@id": "#8f9513f9-c673-484c-90e6-8a6d45399b22"
+                    "@id": "#f2964d4e-6d92-445d-8acb-bf0c1ba39514"
                 }
             ],
             "name": "kmer-profiling-hifi-VGP1/main",
@@ -75,7 +75,7 @@
                 "@id": "#galaxy"
             },
             "url": "https://github.com/iwc-workflows/kmer-profiling-hifi-VGP1",
-            "version": "0.1.7"
+            "version": "0.1.8"
         },
         {
             "@id": "#galaxy",
@@ -95,7 +95,7 @@
             "name": "VGP"
         },
         {
-            "@id": "#8f9513f9-c673-484c-90e6-8a6d45399b22",
+            "@id": "#f2964d4e-6d92-445d-8acb-bf0c1ba39514",
             "@type": "Organization",
             "name": "Galaxy"
         },
@@ -146,7 +146,7 @@
             "conformsTo": {
                 "@id": "https://w3id.org/ro/terms/test#PlanemoEngine"
             },
-            "engineVersion": ">=0.75.24"
+            "engineVersion": ">=0.75.26"
         },
         {
             "@id": "https://w3id.org/ro/terms/test#PlanemoEngine",
